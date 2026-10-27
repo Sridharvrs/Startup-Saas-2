@@ -1,0 +1,1075 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Founder dashboard | Orbitly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/dash.css" />
+    <link rel="stylesheet" href="css/founder.css" />
+  </head>
+  <body class="role-founder">
+    <aside class="side" id="side">
+      <div class="sb">
+        <a class="brand" href="attroney-dashboard.html">
+          <img src="images/Logo.webp" alt="Orbitly Logo" class="brand-logo">
+        </a>
+        <button class="sx" id="sx" aria-label="Close menu">&times;</button>
+      </div>
+      <div class="who">
+        <img
+          class="av"
+          src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=70"
+          alt="Anika"
+        />
+        <div><b class="profileName">Anika Rao</b><small>Founder</small></div>
+      </div>
+      <nav class="nv">
+        <button class="ni" data-m="overview">
+          <span class="ico">&#9632;</span>Overview</button
+        ><button class="ni" data-m="revenue">
+          <span class="ico">&#128200;</span>Revenue</button
+        ><button class="ni" data-m="team">
+          <span class="ico">&#128101;</span>Team</button
+        ><button class="ni" data-m="roadmap">
+          <span class="ico">&#128739;</span>Roadmap</button
+        ><button class="ni" data-m="investors">
+          <span class="ico">&#128188;</span>Investors</button
+        ><button class="ni" data-m="settings">
+          <span class="ico">&#9881;</span>Settings
+        </button>
+      </nav>
+      <div class="sf">
+        <!-- <a class="ni alt" href="team-dashboard.html">
+            <span class="ico">&#8644;</span>Switch to Team view
+        </a> -->
+        <button class="ni out" data-logout>
+          <span class="ico">&#9211;</span>Log out
+        </button>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+    <div class="main">
+      <header class="top">
+        <button class="bg" id="bg" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <h1 id="ttl">Overview</h1>
+        <div class="tr">
+          <span class="clk" id="clk"></span>
+          <div class="bell">
+            <button id="bell" aria-label="Notifications">
+              &#128276;<i></i>
+            </button>
+            <div class="dd" id="dd">
+              <h4>Notifications</h4>
+              <p><b>New signup</b> Kiteflow upgraded to Growth</p>
+              <p><b>Reminder</b> Weekly digest sends at 5pm</p>
+              <p><b>Security</b> New login from Chennai</p>
+            </div>
+          </div>
+          <button class="lo" data-logout>Log out</button>
+        </div>
+      </header>
+      <main class="cont">
+        <section class="mod" id="m-overview" data-title="Overview">
+          <div class="mh">
+            <div>
+              <h2>Overview</h2>
+              <p>
+                Good morning, <span class="profileName"> Name </span>. Here is how Orbitly is performing today.
+              </p>
+            </div>
+          </div>
+          <div class="g g4">
+            <div class="kpi">
+              <span class="kl">Monthly revenue</span
+              ><b class="kv">$<i data-count="84.2">0</i>k</b
+              ><em class="up">&#9650; 12.4% vs last month</em>
+              <div class="spark" data-line="40,44,52,58,66,84" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Customers</span
+              ><b class="kv"><i data-count="4218">0</i></b
+              ><em class="up">&#9650; 4.1% vs last month</em>
+              <div class="spark" data-line="30,32,35,38,41,42" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Churn rate</span
+              ><b class="kv"><i data-count="1.9">0</i>%</b
+              ><em class="dn">&#9660; 0.3% vs last month</em>
+              <div
+                class="spark"
+                data-line="3,2.8,2.5,2.2,2,1.9"
+                data-spark
+              ></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Runway (months)</span
+              ><b class="kv"><i data-count="22">0</i></b
+              ><em class="up">&#9650; 2.0% vs last month</em>
+              <div class="spark" data-line="14,15,17,18,20,22" data-spark></div>
+            </div>
+          </div>
+          <div class="g g2f">
+            <div class="panel">
+              <div class="ph">
+                <h3>Revenue trend</h3>
+                <div class="seg" data-rng>
+                  <button class="on">6M</button><button>12M</button>
+                </div>
+              </div>
+              <div
+                class="ch"
+                data-line="40,44,52,58,66,84"
+                data-labels="Jun,Jul,Aug,Sep,Oct,Nov"
+                data-fmt="$k"
+              ></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Plan mix</h3></div>
+              <div
+                class="dn-w"
+                data-donut="46,38,16"
+                data-names="Growth,Starter,Scale"
+                data-center="4,218"
+              ></div>
+            </div>
+          </div>
+          <div class="g g3">
+            <div class="panel">
+              <div class="ph"><h3>Goals this quarter</h3></div>
+              <div class="pr">
+                <div><span>Reach $100k MRR</span><b>84%</b></div>
+                <div class="pt"><i class="v" style="--w: 84%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Launch AI planner v2</span><b>68%</b></div>
+                <div class="pt"><i class="c" style="--w: 68%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Hire 5 engineers</span><b>60%</b></div>
+                <div class="pt"><i class="l" style="--w: 60%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Cut churn below 1.5%</span><b>45%</b></div>
+                <div class="pt"><i class="o" style="--w: 45%"></i></div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Live activity</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot l"></span>
+                  <div>
+                    <b>Kiteflow upgraded to Growth</b><small>+$380/mo</small>
+                  </div>
+                  <time>2m</time>
+                </li>
+                <li>
+                  <span class="dot v"></span>
+                  <div>
+                    <b>Invoice paid by Northwind</b><small>$2,400</small>
+                  </div>
+                  <time>14m</time>
+                </li>
+                <li>
+                  <span class="dot o"></span>
+                  <div>
+                    <b>Support ticket escalated</b><small>Priority: high</small>
+                  </div>
+                  <time>1h</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div>
+                    <b>New hire accepted offer</b><small>Senior engineer</small>
+                  </div>
+                  <time>3h</time>
+                </li>
+              </ul>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Quick actions</h3></div>
+              <div class="qa">
+                <button data-t="Investor update drafted">
+                  &#9993; Draft update</button
+                ><button data-t="Invite link copied">
+                  &#128101; Invite teammate</button
+                ><button data-t="Report exported">
+                  &#128196; Export report</button
+                ><button data-t="Meeting scheduled">
+                  &#128197; Book board call
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Top accounts</h3></div>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Account</th>
+                  <th>Plan</th>
+                  <th>Seats</th>
+                  <th>MRR</th>
+                  <th>Health</th>
+                </tr>
+                <tr>
+                  <td>Northwind</td>
+                  <td>Scale</td>
+                  <td>64</td>
+                  <td>$3,136</td>
+                  <td><span class="bdg g">Healthy</span></td>
+                </tr>
+                <tr>
+                  <td>Lumen Labs</td>
+                  <td>Growth</td>
+                  <td>28</td>
+                  <td>$532</td>
+                  <td><span class="bdg g">Healthy</span></td>
+                </tr>
+                <tr>
+                  <td>Kiteflow</td>
+                  <td>Growth</td>
+                  <td>22</td>
+                  <td>$418</td>
+                  <td><span class="bdg o">Watch</span></td>
+                </tr>
+                <tr>
+                  <td>Brightly</td>
+                  <td>Scale</td>
+                  <td>40</td>
+                  <td>$1,960</td>
+                  <td><span class="bdg g">Healthy</span></td>
+                </tr>
+                <tr>
+                  <td>Fernhill</td>
+                  <td>Starter</td>
+                  <td>5</td>
+                  <td>$0</td>
+                  <td><span class="bdg r">At risk</span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-revenue" data-title="Revenue">
+          <div class="mh">
+            <div>
+              <h2>Revenue</h2>
+              <p>Recurring revenue, retention and billing in one place.</p>
+            </div>
+          </div>
+          <div class="g g4">
+            <div class="kpi">
+              <span class="kl">ARR</span
+              ><b class="kv">$<i data-count="1.01">0</i>M</b
+              ><em class="up">&#9650; 11.8% vs last month</em>
+              <div class="spark" data-line="5,6,7,8,9,10" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">ARPU</span
+              ><b class="kv">$<i data-count="20">0</i></b
+              ><em class="up">&#9650; 3.2% vs last month</em>
+              <div class="spark" data-line="17,18,18,19,19,20" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Net new MRR</span
+              ><b class="kv">$<i data-count="9.4">0</i>k</b
+              ><em class="up">&#9650; 6.5% vs last month</em>
+              <div class="spark" data-line="4,5,6,7,8,9" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">LTV : CAC</span
+              ><b class="kv"><i data-count="4.6">0</i>x</b
+              ><em class="up">&#9650; 0.4% vs last month</em>
+              <div
+                class="spark"
+                data-line="3,3.4,3.9,4.1,4.4,4.6"
+                data-spark
+              ></div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Monthly recurring revenue</h3></div>
+              <div
+                class="ch"
+                data-bars="40,44,52,58,66,84"
+                data-labels="Jun,Jul,Aug,Sep,Oct,Nov"
+                data-fmt="$k"
+              ></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Revenue by plan</h3></div>
+              <div
+                class="dn-w"
+                data-donut="52,31,17"
+                data-names="Scale,Growth,Starter"
+                data-center="$84k"
+              ></div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Cohort retention</h3></div>
+              <div class="heat">
+                <span></span><b>M1</b><b>M2</b><b>M3</b><b>M4</b><b>M5</b
+                ><b>Jun</b><i style="--o: 1">100%</i><i style="--o: 0.94">94%</i
+                ><i style="--o: 0.9">90%</i><i style="--o: 0.87">87%</i
+                ><i style="--o: 0.85">85%</i><b>Jul</b><i style="--o: 1">100%</i
+                ><i style="--o: 0.95">95%</i><i style="--o: 0.91">91%</i
+                ><i style="--o: 0.88">88%</i><i class="e"></i><b>Aug</b
+                ><i style="--o: 1">100%</i><i style="--o: 0.96">96%</i
+                ><i style="--o: 0.93">93%</i><i class="e"></i><i class="e"></i
+                ><b>Sep</b><i style="--o: 1">100%</i><i style="--o: 0.95">95%</i
+                ><i class="e"></i><i class="e"></i><i class="e"></i><b>Oct</b
+                ><i style="--o: 1">100%</i><i class="e"></i><i class="e"></i
+                ><i class="e"></i><i class="e"></i>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Forecast</h3></div>
+              <div class="pr">
+                <div><span>Q4 target $270k</span><b>78%</b></div>
+                <div class="pt"><i class="v" style="--w: 78%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Expansion revenue</span><b>64%</b></div>
+                <div class="pt"><i class="c" style="--w: 64%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>New logo revenue</span><b>52%</b></div>
+                <div class="pt"><i class="l" style="--w: 52%"></i></div>
+              </div>
+              <p class="note">
+                At the current pace you will beat the Q4 target by about 6%.
+              </p>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph">
+              <h3>Recent invoices</h3>
+              <button class="ghb" data-t="Invoices exported">Export CSV</button>
+            </div>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Invoice</th>
+                  <th>Customer</th>
+                  <th>Amount</th>
+                  <th>Date</th>
+                  <th>Status</th>
+                </tr>
+                <tr>
+                  <td>#INV-2041</td>
+                  <td>Northwind</td>
+                  <td>$3,136</td>
+                  <td>24 Oct</td>
+                  <td><span class="bdg g">Paid</span></td>
+                </tr>
+                <tr>
+                  <td>#INV-2040</td>
+                  <td>Brightly</td>
+                  <td>$1,960</td>
+                  <td>23 Oct</td>
+                  <td><span class="bdg g">Paid</span></td>
+                </tr>
+                <tr>
+                  <td>#INV-2039</td>
+                  <td>Fernhill</td>
+                  <td>$145</td>
+                  <td>21 Oct</td>
+                  <td><span class="bdg r">Overdue</span></td>
+                </tr>
+                <tr>
+                  <td>#INV-2038</td>
+                  <td>Kiteflow</td>
+                  <td>$418</td>
+                  <td>20 Oct</td>
+                  <td><span class="bdg o">Pending</span></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-team" data-title="Team">
+          <div class="mh">
+            <div>
+              <h2>Team</h2>
+              <p>Headcount, hiring and approvals.</p>
+            </div>
+          </div>
+          <div class="g g4">
+            <div class="kpi">
+              <span class="kl">Headcount</span
+              ><b class="kv"><i data-count="85">0</i></b
+              ><em class="up">&#9650; 5.0% vs last month</em>
+              <div class="spark" data-line="60,66,70,76,80,85" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Open roles</span
+              ><b class="kv"><i data-count="7">0</i></b
+              ><em class="dn">&#9660; 2.0% vs last month</em>
+              <div class="spark" data-line="11,10,9,9,8,7" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Avg. tenure (yrs)</span
+              ><b class="kv"><i data-count="2.4">0</i></b
+              ><em class="up">&#9650; 0.2% vs last month</em>
+              <div
+                class="spark"
+                data-line="2,2.1,2.2,2.3,2.3,2.4"
+                data-spark
+              ></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">eNPS</span
+              ><b class="kv"><i data-count="54">0</i></b
+              ><em class="up">&#9650; 6.0% vs last month</em>
+              <div class="spark" data-line="40,44,47,50,52,54" data-spark></div>
+            </div>
+          </div>
+          <div class="g g2f">
+            <div class="panel">
+              <div class="ph"><h3>People</h3></div>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Dept</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="av"
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=70"
+                        alt=""
+                      />
+                      Anika Rao
+                    </td>
+                    <td>CEO</td>
+                    <td>Executive</td>
+                    <td><span class="bdg g">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="av"
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=70"
+                        alt=""
+                      />
+                      Tom Becker
+                    </td>
+                    <td>CTO</td>
+                    <td>Engineering</td>
+                    <td><span class="bdg g">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="av"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=70"
+                        alt=""
+                      />
+                      Priya Nair
+                    </td>
+                    <td>Head of design</td>
+                    <td>Design</td>
+                    <td><span class="bdg g">Active</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="av"
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=70"
+                        alt=""
+                      />
+                      Sam Ortiz
+                    </td>
+                    <td>Head of growth</td>
+                    <td>Growth</td>
+                    <td><span class="bdg o">On leave</span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>By department</h3></div>
+              <div
+                class="dn-w"
+                data-donut="38,22,18,12,10"
+                data-names="Engineering,Growth,Support,Design,Ops"
+                data-center="85"
+              ></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Hiring pipeline</h3></div>
+            <div class="kb">
+              <div class="kc">
+                <h4>Applied<em>3</em></h4>
+                <div class="kcard">Frontend lead</div>
+                <div class="kcard">Data analyst</div>
+                <div class="kcard">Support rep</div>
+              </div>
+              <div class="kc">
+                <h4>Interview<em>2</em></h4>
+                <div class="kcard">Senior engineer</div>
+                <div class="kcard">Product designer</div>
+              </div>
+              <div class="kc">
+                <h4>Offer<em>1</em></h4>
+                <div class="kcard">DevOps engineer</div>
+              </div>
+              <div class="kc">
+                <h4>Hired<em>1</em></h4>
+                <div class="kcard">Customer success</div>
+              </div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Pending approvals</h3></div>
+              <ul class="fl ap">
+                <li>
+                  <span class="dot v"></span>
+                  <div>
+                    <b>Leave: Priya Nair</b><small>3 days, 4 to 6 Nov</small>
+                  </div>
+                  <div class="ab">
+                    <button class="ok">Approve</button
+                    ><button class="no">Decline</button>
+                  </div>
+                </li>
+                <li>
+                  <span class="dot v"></span>
+                  <div>
+                    <b>Budget: Growth ads</b><small>$4,500 for November</small>
+                  </div>
+                  <div class="ab">
+                    <button class="ok">Approve</button
+                    ><button class="no">Decline</button>
+                  </div>
+                </li>
+                <li>
+                  <span class="dot v"></span>
+                  <div>
+                    <b>Hire: DevOps engineer</b><small>Offer at $118k</small>
+                  </div>
+                  <div class="ab">
+                    <button class="ok">Approve</button
+                    ><button class="no">Decline</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Culture pulse</h3></div>
+              <div class="pr">
+                <div><span>Feel heard</span><b>88%</b></div>
+                <div class="pt"><i class="v" style="--w: 88%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Clear goals</span><b>92%</b></div>
+                <div class="pt"><i class="c" style="--w: 92%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Work-life balance</span><b>76%</b></div>
+                <div class="pt"><i class="l" style="--w: 76%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Growth opportunities</span><b>70%</b></div>
+                <div class="pt"><i class="o" style="--w: 70%"></i></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-roadmap" data-title="Roadmap">
+          <div class="mh">
+            <div>
+              <h2>Roadmap</h2>
+              <p>Plan quarters, track objectives and manage risk.</p>
+            </div>
+          </div>
+          <div class="g g3">
+            <div class="kpi">
+              <span class="kl">Features shipped</span
+              ><b class="kv"><i data-count="34">0</i></b
+              ><em class="up">&#9650; 8.0% vs last month</em>
+              <div class="spark" data-line="12,18,22,27,31,34" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">On-time delivery</span
+              ><b class="kv"><i data-count="91">0</i>%</b
+              ><em class="up">&#9650; 2.0% vs last month</em>
+              <div class="spark" data-line="80,82,85,88,89,91" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Open risks</span
+              ><b class="kv"><i data-count="4">0</i></b
+              ><em class="dn">&#9660; 1.0% vs last month</em>
+              <div class="spark" data-line="8,7,6,5,5,4" data-spark></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Quarter timeline</h3></div>
+            <div class="gantt">
+              <div class="gh"><span></span><b>Oct</b><b>Nov</b><b>Dec</b></div>
+              <div class="gr">
+                <span>AI planner v2</span>
+                <div class="gl">
+                  <i class="v" style="left: 0%; width: 55%">80%</i>
+                </div>
+              </div>
+              <div class="gr">
+                <span>Mobile app</span>
+                <div class="gl">
+                  <i class="c" style="left: 15%; width: 60%">55%</i>
+                </div>
+              </div>
+              <div class="gr">
+                <span>SSO and audit logs</span>
+                <div class="gl">
+                  <i class="l" style="left: 40%; width: 35%">30%</i>
+                </div>
+              </div>
+              <div class="gr">
+                <span>Public API</span>
+                <div class="gl">
+                  <i class="o" style="left: 55%; width: 45%">10%</i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Objectives and key results</h3></div>
+              <div class="pr">
+                <div><span>Grow MRR to $100k</span><b>84%</b></div>
+                <div class="pt"><i class="v" style="--w: 84%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>NPS above 50</span><b>90%</b></div>
+                <div class="pt"><i class="c" style="--w: 90%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>99.95% uptime</span><b>97%</b></div>
+                <div class="pt"><i class="l" style="--w: 97%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Ship mobile beta</span><b>55%</b></div>
+                <div class="pt"><i class="o" style="--w: 55%"></i></div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Upcoming releases</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot v"></span>
+                  <div>
+                    <b>v4.2 Smart sprints</b><small>Planned for 3 Nov</small>
+                  </div>
+                  <time>8d</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div>
+                    <b>v4.3 Mobile beta</b><small>Planned for 24 Nov</small>
+                  </div>
+                  <time>29d</time>
+                </li>
+                <li>
+                  <span class="dot l"></span>
+                  <div><b>v4.4 SSO</b><small>Planned for 15 Dec</small></div>
+                  <time>50d</time>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Risk register</h3></div>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Risk</th>
+                    <th>Impact</th>
+                    <th>Owner</th>
+                    <th>Level</th>
+                  </tr>
+                  <tr>
+                    <td>Vendor outage</td>
+                    <td>High</td>
+                    <td>Tom</td>
+                    <td><span class="bdg o">Medium</span></td>
+                  </tr>
+                  <tr>
+                    <td>Key hire delay</td>
+                    <td>Medium</td>
+                    <td>Anika</td>
+                    <td><span class="bdg g">Low</span></td>
+                  </tr>
+                  <tr>
+                    <td>Security audit</td>
+                    <td>High</td>
+                    <td>Priya</td>
+                    <td><span class="bdg r">High</span></td>
+                  </tr>
+                  <tr>
+                    <td>Budget overrun</td>
+                    <td>Low</td>
+                    <td>Sam</td>
+                    <td><span class="bdg g">Low</span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Top feature requests</h3></div>
+              <ul class="vt">
+                <li>
+                  <button data-t="Vote added"><b>212</b>&#9650;</button
+                  ><span>Dark mode</span>
+                </li>
+                <li>
+                  <button data-t="Vote added"><b>158</b>&#9650;</button
+                  ><span>Gantt export</span>
+                </li>
+                <li>
+                  <button data-t="Vote added"><b>121</b>&#9650;</button
+                  ><span>Slack digest</span>
+                </li>
+                <li>
+                  <button data-t="Vote added"><b>96</b>&#9650;</button
+                  ><span>Custom fields</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-investors" data-title="Investors">
+          <div class="mh">
+            <div>
+              <h2>Investors</h2>
+              <p>Fundraising, cap table and investor updates.</p>
+            </div>
+          </div>
+          <div class="g g4">
+            <div class="kpi">
+              <span class="kl">Raised to date</span
+              ><b class="kv">$<i data-count="6.2">0</i>M</b
+              ><em class="up">&#9650; 0.0% vs last month</em>
+              <div class="spark" data-line="2,2,4,4,6,6" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Valuation</span
+              ><b class="kv">$<i data-count="38">0</i>M</b
+              ><em class="up">&#9650; 0.0% vs last month</em>
+              <div class="spark" data-line="20,20,28,28,38,38" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Investors</span
+              ><b class="kv"><i data-count="14">0</i></b
+              ><em class="up">&#9650; 1.0% vs last month</em>
+              <div class="spark" data-line="8,9,10,12,13,14" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Update open rate</span
+              ><b class="kv"><i data-count="92">0</i>%</b
+              ><em class="up">&#9650; 4.0% vs last month</em>
+              <div class="spark" data-line="70,78,82,85,89,92" data-spark></div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Cap table</h3></div>
+              <div
+                class="dn-w"
+                data-donut="55,25,12,8"
+                data-names="Founders,Seed investors,Employees,Advisors"
+                data-center="100%"
+              ></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Series A progress</h3></div>
+              <div class="pr">
+                <div><span>Target $12M</span><b>58%</b></div>
+                <div class="pt"><i class="v" style="--w: 58%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Soft-circled</span><b>42%</b></div>
+                <div class="pt"><i class="c" style="--w: 42%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Term sheets received</span><b>20%</b></div>
+                <div class="pt"><i class="l" style="--w: 20%"></i></div>
+              </div>
+              <div class="lnk">
+                <input
+                  readonly
+                  value="orbitly.app/share/investor-7f3a"
+                /><button data-t="Link copied">Copy</button>
+              </div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Investor list</h3></div>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Investor</th>
+                    <th>Type</th>
+                    <th>Invested</th>
+                    <th>Last update</th>
+                  </tr>
+                  <tr>
+                    <td>Northstar VC</td>
+                    <td>Lead</td>
+                    <td>$3.0M</td>
+                    <td>Today</td>
+                  </tr>
+                  <tr>
+                    <td>Angel: R. Mehta</td>
+                    <td>Angel</td>
+                    <td>$250k</td>
+                    <td>2d ago</td>
+                  </tr>
+                  <tr>
+                    <td>Fernhill Capital</td>
+                    <td>Seed</td>
+                    <td>$1.5M</td>
+                    <td>5d ago</td>
+                  </tr>
+                  <tr>
+                    <td>Founders Fund Lite</td>
+                    <td>Seed</td>
+                    <td>$1.2M</td>
+                    <td>1w ago</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Milestones</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot l"></span>
+                  <div>
+                    <b>Crossed $1M ARR</b><small>Board celebrated</small>
+                  </div>
+                  <time>Sep</time>
+                </li>
+                <li>
+                  <span class="dot v"></span>
+                  <div>
+                    <b>4,000 customers</b><small>Milestone unlocked</small>
+                  </div>
+                  <time>Oct</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div>
+                    <b>Series A kickoff</b><small>Roadshow starts</small>
+                  </div>
+                  <time>Nov</time>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Data room</h3></div>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Document</th>
+                  <th>Size</th>
+                  <th>Access</th>
+                  <th>Updated</th>
+                </tr>
+                <tr>
+                  <td>Pitch deck v9.pdf</td>
+                  <td>4.2 MB</td>
+                  <td>Investors</td>
+                  <td>Today</td>
+                </tr>
+                <tr>
+                  <td>Financial model.xlsx</td>
+                  <td>1.8 MB</td>
+                  <td>Lead only</td>
+                  <td>Yesterday</td>
+                </tr>
+                <tr>
+                  <td>Product roadmap.pdf</td>
+                  <td>2.4 MB</td>
+                  <td>Investors</td>
+                  <td>3d ago</td>
+                </tr>
+                <tr>
+                  <td>Legal pack.zip</td>
+                  <td>12 MB</td>
+                  <td>Lead only</td>
+                  <td>1w ago</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-settings" data-title="Settings">
+          <div class="mh">
+            <div>
+              <h2>Settings</h2>
+              <p>Workspace, billing, security and integrations.</p>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Workspace profile</h3></div>
+              <form class="frm" id="wf">
+                <label>Company name<input value="Orbitly Inc." /></label
+                ><label>Website<input value="https://orbitly.app" /></label
+                ><label
+                  >Time zone<select>
+                    <option>Asia/Kolkata (IST)</option>
+                    <option>America/Los_Angeles</option>
+                    <option>Europe/Berlin</option>
+                  </select></label
+                ><button class="b1">Save changes</button>
+              </form>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Billing</h3></div>
+              <div class="bill">
+                <b>Scale plan</b><span>$49 per seat, billed yearly</span>
+                <div class="pt"><i class="v" style="--w: 85%"></i></div>
+                <small>85 of 100 seats used</small>
+              </div>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Method</th>
+                    <th>Expires</th>
+                  </tr>
+                  <tr>
+                    <td>Visa ending 4242</td>
+                    <td>09/28</td>
+                  </tr>
+                </table>
+              </div>
+              <button class="b2" data-t="Billing portal opened">
+                Manage billing
+              </button>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Security</h3></div>
+              <div class="trow">
+                <div>
+                  <b>Two-step sign-in</b><small>Required for all admins</small>
+                </div>
+                <button class="tg on" aria-label="Two-step sign-in"></button>
+              </div>
+              <div class="trow">
+                <div>
+                  <b>Single sign-on</b><small>Via Google Workspace</small>
+                </div>
+                <button class="tg on" aria-label="Single sign-on"></button>
+              </div>
+              <div class="trow">
+                <div>
+                  <b>Audit log alerts</b
+                  ><small>Email on sensitive changes</small>
+                </div>
+                <button class="tg" aria-label="Audit log alerts"></button>
+              </div>
+              <div class="trow">
+                <div>
+                  <b>Session timeout</b><small>Sign out after 30 minutes</small>
+                </div>
+                <button class="tg on" aria-label="Session timeout"></button>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Integrations</h3></div>
+              <div class="trow">
+                <div>
+                  <b>Slack</b><small>Daily digest to #leadership</small>
+                </div>
+                <button class="tg on" aria-label="Slack"></button>
+              </div>
+              <div class="trow">
+                <div><b>Stripe</b><small>Revenue sync every hour</small></div>
+                <button class="tg on" aria-label="Stripe"></button>
+              </div>
+              <div class="trow">
+                <div><b>GitHub</b><small>Link commits to tasks</small></div>
+                <button class="tg" aria-label="GitHub"></button>
+              </div>
+              <div class="trow">
+                <div><b>Zapier</b><small>5,000+ app connections</small></div>
+                <button class="tg on" aria-label="Zapier"></button>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Roles and permissions</h3></div>
+            <div class="tw">
+              <table>
+                <tr>
+                  <th>Role</th>
+                  <th>Members</th>
+                  <th>Billing</th>
+                  <th>Roadmap</th>
+                  <th>Investors</th>
+                </tr>
+                <tr>
+                  <td>Founder</td>
+                  <td>2</td>
+                  <td>Full</td>
+                  <td>Full</td>
+                  <td>Full</td>
+                </tr>
+                <tr>
+                  <td>Admin</td>
+                  <td>5</td>
+                  <td>View</td>
+                  <td>Full</td>
+                  <td>None</td>
+                </tr>
+                <tr>
+                  <td>Member</td>
+                  <td>78</td>
+                  <td>None</td>
+                  <td>Edit</td>
+                  <td>None</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="modal" id="lom">
+      <div class="mbx">
+        <h3>Log out of Orbitly?</h3>
+        <p>You will return to the website. Unsaved changes may be lost.</p>
+        <div class="mrow">
+          <button class="b2" id="lc">Stay signed in</button
+          ><button class="b1" id="ly">Yes, log out</button>
+        </div>
+      </div>
+    </div>
+    <div class="toasts" id="toasts"></div>
+    <script src="js/dash.js"></script>
+    <script src="js/founder.js"></script>
+  </body>
+</html>

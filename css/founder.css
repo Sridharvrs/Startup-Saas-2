@@ -1,0 +1,20 @@
+.role-founder {
+  --sb: #12103a;
+  --acc: #c6ff3d;
+  --accT: #14123d;
+}
+.role-founder .side {
+  background: linear-gradient(180deg, #12103a, #1d1752);
+}
+.role-founder .mh h2::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 5px;
+  margin-top: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--v), var(--coral));
+}
+.role-founder .panel {
+  border-top: 4px solid var(--v);
+}

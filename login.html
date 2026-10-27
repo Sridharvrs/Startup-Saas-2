@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0918">
+
+  <title>Sign In | Orbitly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="login-body">
+
+  <main class="login-screen" id="lm">
+
+    <!-- CINEMATIC LEFT SIDE -->
+    <section class="login-visual">
+
+      <div class="visual-background"></div>
+      <div class="visual-overlay"></div>
+
+      <header class="visual-header">
+        <a href="index.html" class="brand" aria-label="Orbitly home">
+          <img src="images/logo.webp" alt="Orbitly" class="brand-logo">
+        </a>
+
+        <a href="index.html" class="visual-back">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          Back to website
+        </a>
+      </header>
+
+      <div class="visual-content">
+
+        <div class="visual-pill">
+          <span class="live-dot"></span>
+          YOUR NEXT CHAPTER STARTS HERE
+        </div>
+
+        <h1>
+          Big ideas.<br>
+          <span>Better workflows.</span><br>
+          Real results.
+        </h1>
+
+        <p class="visual-description">
+          Bring your projects, insights, and team together.
+          Everything you need to move work forward, all in one place.
+        </p>
+
+        <div class="visual-stat-row">
+          <div class="visual-stat">
+            <strong>01<span>.</span></strong>
+            <p>One workspace</p>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="visual-stat">
+            <strong>∞</strong>
+            <p>Room to grow</p>
+          </div>
+
+          <div class="stat-divider"></div>
+
+          <div class="visual-stat">
+            <strong><i class="fa-solid fa-bolt"></i></strong>
+            <p>Work smarter</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="visual-bottom">
+        <span>DESIGNED FOR WHAT'S NEXT</span>
+        <span class="visual-bottom-line"></span>
+        <span>ORBITLY © <span id="loginYear"></span></span>
+      </div>
+
+      <div class="visual-decoration decoration-one"></div>
+      <div class="visual-decoration decoration-two"></div>
+
+    </section>
+
+    <!-- DARK LOGIN PANEL -->
+    <section class="login-side">
+
+      <div class="login-panel">
+
+        <div class="panel-top">
+          <span class="panel-brand-mark">
+            <i class="fa-solid fa-circle-nodes"></i>
+          </span>
+
+          <span class="secure-label">
+            <i class="fa-solid fa-lock"></i>
+            Secure access
+          </span>
+        </div>
+
+        <div class="login-heading">
+          <span class="eyebrow">WELCOME BACK</span>
+          <h2>Good to see you.</h2>
+          <p>Sign in to continue to your Orbitly workspace.</p>
+        </div>
+
+        <!-- ACCOUNT TYPE -->
+        <div class="role-section">
+          <label class="section-label">Choose your account</label>
+
+          <div class="role-options">
+
+            <button
+              type="button"
+              class="role-card active"
+              data-role="client"
+              aria-pressed="true"
+            >
+              <i class="fa-regular fa-user"></i>
+              <span>Team</span>
+              <span class="role-check">
+                <i class="fa-solid fa-check"></i>
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="role-card"
+              data-role="attorney"
+              aria-pressed="false"
+            >
+              <i class="fa-solid fa-briefcase"></i>
+              <span>Founder</span>
+              <span class="role-check">
+                <i class="fa-solid fa-check"></i>
+              </span>
+            </button>
+
+          </div>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" novalidate>
+
+          <div class="form-field">
+            <label for="email" id="emailLabel">Client Email</label>
+
+            <div class="input-wrap">
+              <i class="fa-regular fa-envelope input-icon"></i>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+                autocomplete="username"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="form-field">
+            <div class="password-heading">
+              <label for="password">Password</label>
+
+              <a href="error.html" class="forgot-link">
+                Forgot password?
+              </a>
+            </div>
+
+            <div class="input-wrap">
+              <i class="fa-solid fa-lock input-icon"></i>
+
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                autocomplete="current-password"
+                required
+              >
+
+              <button
+                type="button"
+                id="pwdToggle"
+                class="password-toggle"
+                aria-label="Show password"
+                aria-controls="password"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+
+            <p class="password-hint">
+              8+ characters with uppercase, lowercase, a number and a special character.
+            </p>
+          </div>
+
+          <div class="form-options">
+            <label class="remember-option" for="remember">
+              <input type="checkbox" id="remember" name="remember">
+              <span>Remember me</span>
+            </label>
+
+            <span class="session-label">
+              <i class="fa-solid fa-shield-halved"></i>
+              Private session
+            </span>
+          </div>
+
+          <div
+            id="loginError"
+            class="login-error"
+            role="alert"
+            aria-live="polite"
+            style="display: none;"
+          ></div>
+
+          <button type="submit" class="login-submit">
+            <span id="btnText">Client Login</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+        </form>
+
+        <div class="login-separator">
+          <span></span>
+          <i class="fa-solid fa-sparkles"></i>
+          <span></span>
+        </div>
+
+        <div class="login-bottom">
+          <p>Everything starts with your next move.</p>
+          <a href="index.html" class="bottom-link">
+            Explore Orbitly
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <footer class="panel-footer">
+        <span>© <span id="footerYear"></span> Orbitly</span>
+        <span>Built for better work.</span>
+      </footer>
+
+    </section>
+
+  </main>
+
+  <script src="js/base.js"></script>
+  <script src="js/login.js"></script>
+
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("loginYear").textContent = currentYear;
+    document.getElementById("footerYear").textContent = currentYear;
+  </script>
+
+</body>
+</html>

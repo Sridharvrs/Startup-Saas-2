@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0918">
+
+  <title>Create Account | Orbitly</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/signup.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="signup-body">
+
+  <main class="signup-screen" id="sm">
+
+    <!-- LEFT CINEMATIC SECTION -->
+    <section class="signup-visual">
+
+      <div class="signup-visual-bg"></div>
+      <div class="signup-visual-overlay"></div>
+
+      <header class="signup-header">
+        <a href="index.html" class="brand" aria-label="Orbitly home">
+          <img src="images/logo.webp" alt="Orbitly" class="brand-logo">
+        </a>
+
+        <a href="login.html" class="signup-login-link">
+          Already a member?
+          <span>Sign in <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+      </header>
+
+      <div class="signup-visual-content">
+
+        <div class="signup-eyebrow">
+          <span class="signup-live-dot"></span>
+          YOUR WORKSPACE STARTS HERE
+        </div>
+
+        <h1>
+          Make room<br>
+          for <span>what's next.</span>
+        </h1>
+
+        <p class="signup-visual-description">
+          Bring your ideas to life with a workspace designed
+          to help you organize, collaborate, and grow.
+        </p>
+
+        <div class="signup-benefits">
+
+          <div class="signup-benefit">
+            <span class="benefit-icon">
+              <i class="fa-solid fa-layer-group"></i>
+            </span>
+            <div>
+              <h3>Everything in one place</h3>
+              <p>Keep your projects and priorities organized.</p>
+            </div>
+          </div>
+
+          <div class="signup-benefit">
+            <span class="benefit-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </span>
+            <div>
+              <h3>Less busywork, more progress</h3>
+              <p>Build better workflows for your everyday work.</p>
+            </div>
+          </div>
+
+          <div class="signup-benefit">
+            <span class="benefit-icon">
+              <i class="fa-solid fa-chart-simple"></i>
+            </span>
+            <div>
+              <h3>See your momentum</h3>
+              <p>Turn your activity into meaningful insights.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="signup-visual-note">
+          <span class="visual-note-icon">
+            <i class="fa-solid fa-sparkles"></i>
+          </span>
+          <p>A better way to work begins with one small step.</p>
+        </div>
+
+      </div>
+
+      <footer class="signup-visual-footer">
+        <span>ORBITLY WORKSPACE</span>
+        <span class="signup-footer-line"></span>
+        <span>© <span id="signupYear"></span> ORBITLY</span>
+      </footer>
+
+    </section>
+
+    <!-- RIGHT SIGNUP SECTION -->
+    <section class="signup-side">
+
+      <div class="signup-card">
+
+        <div class="signup-card-top">
+          <div class="signup-symbol">
+            <i class="fa-solid fa-circle-nodes"></i>
+          </div>
+
+          <a href="login.html" class="mobile-signin-link">
+            Sign in
+          </a>
+        </div>
+
+        <div class="signup-heading">
+          <span class="signup-card-eyebrow">GET STARTED</span>
+          <h2>Create your account<span>.</span></h2>
+          <p>Set up your details and get started with Orbitly.</p>
+        </div>
+
+        <form id="signupForm" novalidate>
+
+          <!-- FULL NAME -->
+          <div class="signup-field">
+            <label for="name">Full name</label>
+
+            <div class="signup-input-wrap">
+              <i class="fa-regular fa-user signup-input-icon"></i>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                minlength="3"
+                required
+              >
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+          <div class="signup-field">
+            <label for="signupEmail">Email address</label>
+
+            <div class="signup-input-wrap">
+              <i class="fa-regular fa-envelope signup-input-icon"></i>
+
+              <input
+                type="email"
+                id="signupEmail"
+                name="email"
+                placeholder="name@example.com"
+                autocomplete="email"
+                required
+              >
+            </div>
+          </div>
+
+          <!-- PASSWORD -->
+          <div class="signup-field">
+            <label for="signupPassword">Create password</label>
+
+            <div class="signup-input-wrap">
+              <i class="fa-solid fa-lock signup-input-icon"></i>
+
+              <input
+                type="password"
+                id="signupPassword"
+                name="password"
+                placeholder="Create a strong password"
+                autocomplete="new-password"
+                required
+              >
+
+              <button
+                type="button"
+                id="togglePassword"
+                class="signup-password-toggle"
+                aria-label="Show password"
+                aria-controls="signupPassword"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+
+            <p class="signup-field-hint">
+              At least 8 characters, with uppercase, lowercase,
+              a number, and a special character.
+            </p>
+          </div>
+
+          <!-- CONFIRM PASSWORD -->
+          <div class="signup-field">
+            <label for="confirmPassword">Confirm password</label>
+
+            <div class="signup-input-wrap">
+              <i class="fa-solid fa-shield-halved signup-input-icon"></i>
+
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Enter your password again"
+                autocomplete="new-password"
+                required
+              >
+
+              <button
+                type="button"
+                id="toggleConfirmPassword"
+                class="signup-password-toggle"
+                aria-label="Show password"
+                aria-controls="confirmPassword"
+              >
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- TERMS -->
+          <div class="signup-terms">
+            <input
+              type="checkbox"
+              id="signupTerms"
+              name="terms"
+              required
+            >
+
+            <label for="signupTerms">
+              I agree to the
+              <a href="terms.html" target="_blank" rel="noopener">Terms of Service</a>
+              and
+              <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>.
+            </label>
+          </div>
+
+          <!-- MESSAGE CREATED BY JAVASCRIPT -->
+          <div
+            id="signupMessage"
+            class="ev-message"
+            role="status"
+            aria-live="polite"
+          ></div>
+
+          <!-- SUBMIT -->
+          <button type="submit" class="ev-submit">
+            <span>Create Account</span>
+            <span class="ev-submit-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </button>
+
+        </form>
+
+        <div class="signup-divider">
+          <span></span>
+          <i class="fa-solid fa-sparkles"></i>
+          <span></span>
+        </div>
+
+        <p class="signup-card-bottom">
+          Already have an account?
+          <a href="login.html">Sign in to Orbitly</a>
+        </p>
+
+      </div>
+
+      <div class="signup-side-footer">
+        <span><i class="fa-solid fa-lock"></i> Your workspace journey starts here</span>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="js/base.js"></script>
+  <script src="js/signup.js"></script>
+
+  <script>
+    document.getElementById("signupYear").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>

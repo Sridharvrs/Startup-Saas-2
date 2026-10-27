@@ -1,0 +1,736 @@
+.pg-about{--card:#5b3bf0;--ct:#fff;--bd:4px dotted #c6ff3d}
+.pg-about .card p{color:#f1edff}.pg-about .card h3{color:#fff}.pg-about .ic{background:#fff}
+.tm{padding:0 0 22px;text-align:center;overflow:hidden}.tm img{width:100%;height:230px;object-fit:cover;margin-bottom:14px;background:#a99bff;transition:transform .6s}.tm:hover img{transform:scale(1.12)}
+.tline{position:relative;max-width:900px;margin:auto}.tline::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:6px;margin-left:-3px;background:repeating-linear-gradient(var(--ink) 0 14px,transparent 14px 24px);border-radius:4px}
+.ti{position:relative;width:46%;background:#fff;border:3px solid var(--ink);border-radius:20px;padding:22px;margin-bottom:34px;box-shadow:6px 6px 0 var(--coral)}.ti:nth-child(even){margin-left:54%}
+.ti::after{content:"";position:absolute;top:26px;right:-10.5%;width:22px;height:22px;border-radius:50%;background:var(--lime);border:4px solid var(--ink)}.ti:nth-child(even)::after{right:auto;left:-10.5%}
+.ti b{font:800 2rem 'Bricolage Grotesque';color:var(--v)}
+@media(max-width:700px){.tline::before{left:12px}.ti,.ti:nth-child(even){width:auto;margin-left:36px}.ti::after,.ti:nth-child(even)::after{left:-36px;right:auto}}
+.pg-about .card:hover{border-style:solid}
+.hero2 h1{max-width:16ch}.cta{background:linear-gradient(135deg,#5b3bf0,#8a5cff)}
+
+
+/* =========================================================
+   ORBITLY ABOUT — PREMIUM PHOTO SECTIONS
+   ========================================================= */
+
+.pg-about .ab-story,
+.pg-about .ab-mission,
+.pg-about .ab-careers {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.pg-about .ab-story-bg,
+.pg-about .ab-mission-bg,
+.pg-about .ab-careers-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-position: center;
+  background-size: cover;
+  transition: transform 1s ease;
+}
+
+.pg-about .ab-story:hover .ab-story-bg,
+.pg-about .ab-mission:hover .ab-mission-bg,
+.pg-about .ab-careers:hover .ab-careers-bg {
+  transform: scale(1.035);
+}
+
+.pg-about .ab-story-overlay,
+.pg-about .ab-mission-overlay,
+.pg-about .ab-careers-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* =========================================================
+   1. OUR STORY — CINEMATIC HERO
+   ========================================================= */
+
+.pg-about .ab-story {
+  padding: 120px 0 95px;
+  color: #fff;
+  background: #100d35;
+}
+
+.pg-about .ab-story-bg {
+  background-image: url(
+    "../images/img20.webp"
+  );
+}
+
+.pg-about .ab-story-overlay {
+  background:
+    radial-gradient(ellipse at 78% 45%, #744bff55, transparent 48%),
+    linear-gradient(100deg, #100d35f5 0%, #151039eb 53%, #100d35bc 100%);
+}
+
+.pg-about .ab-story-inner {
+  display: grid;
+  grid-template-columns: 1.1fr .8fr;
+  align-items: center;
+  gap: 75px;
+}
+
+.pg-about .ab-story-copy h2 {
+  margin: 27px 0 22px;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  line-height: 1.04;
+  letter-spacing: -2px;
+}
+
+.pg-about .ab-story-copy h2 em,
+.pg-about .ab-careers-box h2 em {
+  color: var(--lime);
+  font-style: normal;
+}
+
+.pg-about .ab-story-copy > p,
+.pg-about .ab-careers-box > p {
+  max-width: 560px;
+  color: #e0dafa;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.pg-about .ab-story-copy > .btn {
+  margin-top: 30px;
+}
+
+.pg-about .ab-story-panel {
+  padding: 34px;
+  border: 1px solid #ffffff55;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #ffffff24, #ffffff0a);
+  box-shadow: 0 30px 80px #0004;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transition: transform .4s, border-color .4s;
+}
+
+.pg-about .ab-story-panel:hover {
+  transform: translateY(-7px);
+  border-color: var(--lime);
+}
+
+.pg-about .ab-panel-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 30px;
+  border-radius: 17px;
+  background: var(--lime);
+  color: var(--ink);
+  font-size: 1.8rem;
+}
+
+.pg-about .ab-eyebrow {
+  color: var(--lime);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+}
+
+.pg-about .ab-story-panel h3 {
+  margin: 18px 0 14px;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.25;
+}
+
+.pg-about .ab-story-panel > p {
+  color: #ded8fa;
+  line-height: 1.8;
+}
+
+.pg-about .ab-panel-foot {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #ffffff35;
+  color: #eeeaff;
+  font-size: .8rem;
+}
+
+.pg-about .ab-panel-line {
+  width: 30px;
+  height: 3px;
+  flex-shrink: 0;
+  background: var(--lime);
+}
+
+.pg-about .ab-story-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 85px auto 0;
+  padding: 20px 24px 0;
+  border-top: 1px solid #ffffff35;
+  color: #d5cef5;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+/* =========================================================
+   2. LIFE AT ORBITLY — EDITORIAL PHOTO COLLAGE
+   ========================================================= */
+
+.pg-about .ab-culture {
+  background: #f7f3ff;
+  color: var(--ink);
+}
+
+.pg-about .ab-culture-heading {
+  display: grid;
+  grid-template-columns: 1fr .7fr;
+  gap: 50px;
+  align-items: end;
+  margin-bottom: 45px;
+}
+
+.pg-about .ab-culture-heading h2 {
+  margin-top: 20px;
+  font-size: clamp(2.5rem, 4.5vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+
+.pg-about .ab-culture-heading > p {
+  max-width: 440px;
+  margin-bottom: 7px;
+  color: #69627f;
+  font-size: 1.02rem;
+  line-height: 1.9;
+}
+
+.pg-about .ab-gallery {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  grid-template-rows: 280px 240px;
+  gap: 22px;
+}
+
+.pg-about .ab-gallery-card {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid #ffffffa0;
+  border-radius: 23px;
+  background: #201644;
+  box-shadow: 0 12px 30px #1c124015;
+}
+
+.pg-about .ab-gallery-main {
+  grid-row: 1 / 3;
+}
+
+.pg-about .ab-gallery-small {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.pg-about .ab-gallery-wide {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.pg-about .ab-gallery-card img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .7s cubic-bezier(.2,.7,.3,1);
+}
+
+.pg-about .ab-gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.pg-about .ab-gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #100d3505 15%,
+    #100d3540 48%,
+    #100d35e8 100%
+  );
+  transition: background .3s;
+}
+
+.pg-about .ab-gallery-card:hover .ab-gallery-overlay {
+  background: linear-gradient(
+    180deg,
+    #100d3510,
+    #100d3560 45%,
+    #100d35f5
+  );
+}
+
+.pg-about .ab-gallery-content {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  left: 25px;
+  color: #fff;
+}
+
+.pg-about .ab-gallery-content > span {
+  color: var(--lime);
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.pg-about .ab-gallery-content h3 {
+  margin-top: 10px;
+  font-size: clamp(1.2rem, 2.4vw, 2rem);
+  line-height: 1.2;
+}
+
+.pg-about .ab-gallery-main .ab-gallery-content h3 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
+
+.pg-about .ab-culture-note {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  max-width: 800px;
+  margin: 35px auto 0;
+  padding: 22px 25px;
+  border: 1px solid #ded5ff;
+  border-radius: 17px;
+  background: #fff;
+  box-shadow: 0 10px 35px #3920790a;
+}
+
+.pg-about .ab-culture-note > span {
+  display: grid;
+  place-items: center;
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: var(--lime);
+  color: var(--ink);
+  font-size: 1.5rem;
+}
+
+.pg-about .ab-culture-note p {
+  color: #69627f;
+  line-height: 1.7;
+}
+
+.pg-about .ab-culture-note strong {
+  color: var(--ink);
+}
+
+/* =========================================================
+   3. MISSION — DARK PHOTOGRAPHIC FEATURE
+   ========================================================= */
+
+.pg-about .ab-mission {
+  padding: 115px 0;
+  color: #fff;
+  background: #100d35;
+}
+
+.pg-about .ab-mission-bg {
+  background-image: url(
+    "../images/img3.webp"
+  );
+  background-position: center 45%;
+}
+
+.pg-about .ab-mission-overlay {
+  background:
+    radial-gradient(ellipse at 50% 35%, #5839d35c, transparent 65%),
+    linear-gradient(120deg, #100d35f2, #151039e8, #100d35f5);
+}
+
+.pg-about .ab-mission-heading {
+  max-width: 900px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.pg-about .ab-mission-heading h2 {
+  margin: 24px 0;
+  font-size: clamp(2.4rem, 4.8vw, 4.4rem);
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+
+.pg-about .ab-mission-heading h2 em {
+  color: var(--lime);
+  font-style: normal;
+}
+
+.pg-about .ab-mission-heading > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #d5cef4;
+  font-size: 1.03rem;
+  line-height: 1.9;
+}
+
+.pg-about .ab-principles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.pg-about .ab-principle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 340px;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid #ffffff35;
+  border-radius: 23px;
+  background: linear-gradient(145deg, #ffffff17, #ffffff06);
+  box-shadow: 0 20px 55px #0002;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform .35s, background .35s, border-color .35s;
+}
+
+.pg-about .ab-principle:hover {
+  transform: translateY(-8px);
+  border-color: #c6ff3d9c;
+  background: linear-gradient(145deg, #ffffff25, #ffffff0a);
+}
+
+.pg-about .ab-principle-number {
+  position: absolute;
+  top: 22px;
+  right: 25px;
+  color: #ffffff65;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.pg-about .ab-principle-icon {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  margin-bottom: 28px;
+  border: 1px solid #c6ff3d65;
+  border-radius: 16px;
+  background: #c6ff3d17;
+  color: var(--lime);
+  font-size: 1.7rem;
+}
+
+.pg-about .ab-principle h3 {
+  margin-bottom: 13px;
+  font-size: 1.4rem;
+}
+
+.pg-about .ab-principle p {
+  color: #d0caed;
+  font-size: .94rem;
+  line-height: 1.8;
+}
+
+.pg-about .ab-principle-foot {
+  margin-top: auto;
+  padding-top: 28px;
+  color: var(--lime);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.pg-about .ab-mission-signoff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-top: 48px;
+  text-align: center;
+}
+
+.pg-about .ab-signoff-star {
+  color: var(--lime);
+  font-size: 1.7rem;
+}
+
+.pg-about .ab-mission-signoff p {
+  color: #e1dcf9;
+  font-size: 1rem;
+}
+
+/* =========================================================
+   4. CAREERS — PREMIUM PHOTO CTA
+   ========================================================= */
+
+.pg-about .ab-careers {
+  padding: 105px 0;
+  background: #100d35;
+}
+
+.pg-about .ab-careers-bg {
+  background-image: url(
+    "../images/img2.webp"
+  );
+  background-position: center 42%;
+}
+
+.pg-about .ab-careers-overlay {
+  background:
+    radial-gradient(ellipse at 50% 50%, #5b3bf052, transparent 60%),
+    linear-gradient(100deg, #100d35ed, #201345d9, #100d35ed);
+}
+
+.pg-about .ab-careers-box {
+  max-width: 900px;
+  margin: auto;
+  padding: 65px 45px;
+  border: 1px solid #ffffff45;
+  border-radius: 30px;
+  background: #ffffff0c;
+  box-shadow: 0 30px 90px #0003;
+  text-align: center;
+  backdrop-filter: blur(13px);
+  -webkit-backdrop-filter: blur(13px);
+}
+
+.pg-about .ab-careers-box h2 {
+  margin: 24px 0;
+  font-size: clamp(2.7rem, 5.5vw, 4.8rem);
+  line-height: 1.04;
+  letter-spacing: -2px;
+}
+
+.pg-about .ab-careers-box > p {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.pg-about .ab-careers-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.pg-about .ab-careers-foot {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 35px;
+  margin-top: 40px;
+  padding-top: 25px;
+  border-top: 1px solid #ffffff35;
+  color: #d8d1f4;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 950px) {
+  .pg-about .ab-story-inner {
+    gap: 35px;
+  }
+
+  .pg-about .ab-story-panel {
+    padding: 25px;
+  }
+
+  .pg-about .ab-principles {
+    gap: 15px;
+  }
+
+  .pg-about .ab-principle {
+    padding: 23px;
+  }
+
+  .pg-about .ab-gallery {
+    grid-template-rows: 250px 220px;
+    gap: 16px;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .pg-about .ab-story,
+  .pg-about .ab-mission {
+    padding: 75px 0;
+  }
+
+  .pg-about .ab-story-inner {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .pg-about .ab-story-copy h2 {
+    font-size: clamp(2.5rem, 10vw, 3.7rem);
+    letter-spacing: -1.4px;
+  }
+
+  .pg-about .ab-story-panel {
+    padding: 25px;
+  }
+
+  .pg-about .ab-story-bottom {
+    margin-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: .58rem;
+    letter-spacing: 1px;
+  }
+
+  .pg-about .ab-culture-heading {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .pg-about .ab-culture-heading h2 {
+    font-size: clamp(2.4rem, 9vw, 3.5rem);
+  }
+
+  .pg-about .ab-gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 320px 220px;
+    gap: 12px;
+  }
+
+  .pg-about .ab-gallery-main {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .pg-about .ab-gallery-small {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .pg-about .ab-gallery-wide {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .pg-about .ab-gallery-content {
+    right: 13px;
+    bottom: 15px;
+    left: 13px;
+  }
+
+  .pg-about .ab-gallery-content > span {
+    font-size: .58rem;
+    letter-spacing: .7px;
+  }
+
+  .pg-about .ab-gallery-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .pg-about .ab-gallery-main .ab-gallery-content h3 {
+    font-size: 2rem;
+  }
+
+  .pg-about .ab-culture-note {
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .pg-about .ab-principles {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .pg-about .ab-principle {
+    min-height: 285px;
+  }
+
+  .pg-about .ab-mission-heading h2 {
+    font-size: clamp(2.25rem, 8.5vw, 3.3rem);
+  }
+
+  .pg-about .ab-careers {
+    padding: 70px 0;
+  }
+
+  .pg-about .ab-careers-box {
+    padding: 42px 20px;
+    border-radius: 23px;
+  }
+
+  .pg-about .ab-careers-box h2 {
+    font-size: clamp(2.45rem, 10vw, 3.7rem);
+    letter-spacing: -1.3px;
+  }
+
+  .pg-about .ab-careers-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pg-about .ab-careers-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pg-about .ab-careers-foot {
+    gap: 14px;
+    font-size: .58rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .pg-about .ab-gallery {
+    grid-template-rows: 270px 200px;
+    gap: 9px;
+  }
+
+  .pg-about .ab-gallery-content h3 {
+    font-size: .9rem;
+  }
+
+  .pg-about .ab-gallery-main .ab-gallery-content h3 {
+    font-size: 1.7rem;
+  }
+
+  .pg-about .ab-story-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .pg-about .ab-story-bg,
+  .pg-about .ab-mission-bg,
+  .pg-about .ab-careers-bg,
+  .pg-about .ab-story-panel,
+  .pg-about .ab-gallery-card img,
+  .pg-about .ab-principle {
+    transition: none;
+  }
+}

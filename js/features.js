@@ -1,0 +1,1 @@
+document.querySelectorAll('.tl button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tl button,.pane').forEach(x=>x.classList.remove('on'));b.classList.add('on');document.querySelector(`.pane[data-p="${b.dataset.t}"]`).classList.add('on')});

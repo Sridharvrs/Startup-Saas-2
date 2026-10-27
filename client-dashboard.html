@@ -1,0 +1,934 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Team dashboard | Orbitly</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/dash.css" />
+    <link rel="stylesheet" href="css/team.css" />
+  </head>
+  <body class="role-team">
+    <aside class="side" id="side">
+      <div class="sb">
+        <a class="brand" href="client-dashboard.html">
+          <img src="images/Logo.webp" alt="Orbitly Logo" class="brand-logo">
+        </a>
+        <button class="sx" id="sx" aria-label="Close menu">&times;</button>
+      </div>
+      <div class="who">
+        <img
+          class="av"
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=70"
+          alt="Sam"
+        />
+        <div><b class="profileName">Sam Ortiz</b><small>Team member</small></div>
+      </div>
+      <nav class="nv">
+        <button class="ni" data-m="today">
+          <span class="ico">&#9728;</span>My day</button
+        ><button class="ni" data-m="tasks">
+          <span class="ico">&#9745;</span>Tasks</button
+        ><button class="ni" data-m="schedule">
+          <span class="ico">&#128197;</span>Schedule</button
+        ><button class="ni" data-m="time">
+          <span class="ico">&#9201;</span>Time tracking</button
+        ><button class="ni" data-m="inbox">
+          <span class="ico">&#9993;</span>Inbox</button
+        ><button class="ni" data-m="profile">
+          <span class="ico">&#128100;</span>Profile
+        </button>
+      </nav>
+      <div class="sf">
+        <!-- <a class="ni alt" href="founder-dashboard.html">
+            <span class="ico">&#8644;</span>Switch to Founder view
+        </a> -->
+        <button class="ni out" data-logout>
+          <span class="ico">&#9211;</span>Log out
+        </button>
+      </div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+    <div class="main">
+      <header class="top">
+        <button class="bg" id="bg" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <h1 id="ttl">Overview</h1>
+        <div class="tr">
+          <span class="clk" id="clk"></span>
+          <div class="bell">
+            <button id="bell" aria-label="Notifications">
+              &#128276;<i></i>
+            </button>
+            <div class="dd" id="dd">
+              <h4>Notifications</h4>
+              <p><b>New signup</b> Kiteflow upgraded to Growth</p>
+              <p><b>Reminder</b> Weekly digest sends at 5pm</p>
+              <p><b>Security</b> New login from Chennai</p>
+            </div>
+          </div>
+          <button class="lo" data-logout>Log out</button>
+        </div>
+      </header>
+      <main class="cont">
+        <section class="mod" id="m-today" data-title="My day">
+          <div class="mh">
+            <div>
+              <h2>My day</h2>
+              <p>Welcome back, <span class="profileName"> Name </span>. You have 5 tasks and 3 meetings today.</p>
+            </div>
+          </div>
+          <div class="g g4">
+            <div class="kpi">
+              <span class="kl">Tasks due today</span
+              ><b class="kv"><i data-count="5">0</i></b
+              ><em class="up">&#9650; 1.0% vs last month</em>
+              <div class="spark" data-line="3,4,6,5,4,5" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Hours logged</span
+              ><b class="kv"><i data-count="6.5">0</i>h</b
+              ><em class="up">&#9650; 8.0% vs last month</em>
+              <div class="spark" data-line="5,6,7,6,7,6.5" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Sprint progress</span
+              ><b class="kv"><i data-count="72">0</i>%</b
+              ><em class="up">&#9650; 9.0% vs last month</em>
+              <div class="spark" data-line="30,40,50,58,66,72" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Kudos received</span
+              ><b class="kv"><i data-count="12">0</i></b
+              ><em class="up">&#9650; 3.0% vs last month</em>
+              <div class="spark" data-line="4,6,7,9,10,12" data-spark></div>
+            </div>
+          </div>
+          <div class="g g2f">
+            <div class="panel">
+              <div class="ph"><h3>Today's checklist</h3></div>
+              <ul class="chk" id="chk">
+                <li>
+                  <label
+                    ><input type="checkbox" /><span
+                      >Review pricing page copy</span
+                    ></label
+                  ><span class="bdg r">High</span>
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" /><span
+                      >Prepare weekly growth report</span
+                    ></label
+                  ><span class="bdg o">Medium</span>
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" checked /><span
+                      >Reply to partner emails</span
+                    ></label
+                  ><span class="bdg g">Low</span>
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" /><span
+                      >Plan newsletter topics</span
+                    ></label
+                  ><span class="bdg o">Medium</span>
+                </li>
+                <li>
+                  <label
+                    ><input type="checkbox" /><span
+                      >Approve ad creatives</span
+                    ></label
+                  ><span class="bdg r">High</span>
+                </li>
+              </ul>
+              <div class="pr">
+                <div><span>Progress</span><b id="cp">20%</b></div>
+                <div class="pt"><i class="v" id="cb" style="--w: 20%"></i></div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Up next</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot v"></span>
+                  <div><b>Standup</b><small>Growth team</small></div>
+                  <time>10:00</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div><b>Design review</b><small>With Priya</small></div>
+                  <time>13:30</time>
+                </li>
+                <li>
+                  <span class="dot l"></span>
+                  <div><b>1:1 with Anika</b><small>Quarterly goals</small></div>
+                  <time>16:00</time>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="g g3">
+            <div class="panel">
+              <div class="ph"><h3>Weekly focus</h3></div>
+              <div
+                class="ch"
+                data-bars="5,7,6,8,6.5,0,0"
+                data-labels="Mon,Tue,Wed,Thu,Fri,Sat,Sun"
+                data-fmt="h"
+              ></div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Announcements</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot o"></span>
+                  <div>
+                    <b>Office closed 14 Nov</b><small>Public holiday</small>
+                  </div>
+                  <time>New</time>
+                </li>
+                <li>
+                  <span class="dot v"></span>
+                  <div><b>Q4 all-hands</b><small>Friday 4pm</small></div>
+                  <time>2d</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div>
+                    <b>New expense policy</b><small>Read and acknowledge</small>
+                  </div>
+                  <time>3d</time>
+                </li>
+              </ul>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Shout-outs</h3></div>
+              <div class="shout">
+                <p>
+                  &ldquo;Thanks Sam for rescuing the launch campaign!&rdquo;
+                </p>
+                <small>Priya Nair, today</small>
+              </div>
+              <div class="shout">
+                <p>&ldquo;Best newsletter we have ever sent.&rdquo;</p>
+                <small>Tom Becker, yesterday</small>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-tasks" data-title="Tasks">
+          <div class="mh">
+            <div>
+              <h2>Tasks</h2>
+              <p>Drag cards between columns to update their status.</p>
+            </div>
+          </div>
+          <div class="g g4">
+            <div class="kpi">
+              <span class="kl">Open</span
+              ><b class="kv"><i data-count="14">0</i></b
+              ><em class="dn">&#9660; 2.0% vs last month</em>
+              <div class="spark" data-line="20,18,17,16,15,14" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">In progress</span
+              ><b class="kv"><i data-count="6">0</i></b
+              ><em class="up">&#9650; 1.0% vs last month</em>
+              <div class="spark" data-line="3,4,5,5,6,6" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Completed</span
+              ><b class="kv"><i data-count="38">0</i></b
+              ><em class="up">&#9650; 12.0% vs last month</em>
+              <div class="spark" data-line="12,18,24,30,34,38" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Overdue</span
+              ><b class="kv"><i data-count="1">0</i></b
+              ><em class="dn">&#9660; 1.0% vs last month</em>
+              <div class="spark" data-line="4,3,3,2,2,1" data-spark></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Board</h3></div>
+            <div class="tb">
+              <input id="nt" placeholder="Add a task and press Enter" />
+              <div class="seg" id="flt">
+                <button class="on" data-f="all">All</button
+                ><button data-f="high">High</button
+                ><button data-f="mine">Mine</button>
+              </div>
+            </div>
+            <div class="kb" id="kb">
+              <div class="kc" data-col="todo">
+                <h4>To do<em>0</em></h4>
+                <div class="kcard" draggable="true" data-p="high">
+                  <b>Landing page A/B test</b
+                  ><small><span class="bdg r">High</span> Due Fri</small>
+                </div>
+                <div class="kcard" draggable="true" data-p="med">
+                  <b>Write case study</b
+                  ><small><span class="bdg o">Med</span> Due Mon</small>
+                </div>
+                <div class="kcard" draggable="true" data-p="low">
+                  <b>Update brand kit</b
+                  ><small><span class="bdg g">Low</span> Due Wed</small>
+                </div>
+              </div>
+              <div class="kc" data-col="doing">
+                <h4>In progress<em>0</em></h4>
+                <div class="kcard" draggable="true" data-p="high">
+                  <b>Q4 campaign plan</b
+                  ><small><span class="bdg r">High</span> Due Thu</small>
+                </div>
+                <div class="kcard" draggable="true" data-p="med">
+                  <b>Newsletter design</b
+                  ><small><span class="bdg o">Med</span> Due Fri</small>
+                </div>
+              </div>
+              <div class="kc" data-col="review">
+                <h4>In review<em>0</em></h4>
+                <div class="kcard" draggable="true" data-p="high">
+                  <b>Pricing page copy</b
+                  ><small><span class="bdg r">High</span> Due Tue</small>
+                </div>
+              </div>
+              <div class="kc" data-col="done">
+                <h4>Done<em>0</em></h4>
+                <div class="kcard" draggable="true" data-p="low">
+                  <b>Social calendar</b
+                  ><small><span class="bdg g">Low</span> Done</small>
+                </div>
+                <div class="kcard" draggable="true" data-p="med">
+                  <b>Webinar signups</b
+                  ><small><span class="bdg o">Med</span> Done</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Workload by project</h3></div>
+              <div class="pr">
+                <div><span>Q4 campaign</span><b>70%</b></div>
+                <div class="pt"><i class="v" style="--w: 70%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Website refresh</span><b>45%</b></div>
+                <div class="pt"><i class="c" style="--w: 45%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Brand kit</span><b>25%</b></div>
+                <div class="pt"><i class="l" style="--w: 25%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Partner program</span><b>15%</b></div>
+                <div class="pt"><i class="o" style="--w: 15%"></i></div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Recently completed</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot l"></span>
+                  <div>
+                    <b>Social calendar</b><small>Marked done by you</small>
+                  </div>
+                  <time>1h</time>
+                </li>
+                <li>
+                  <span class="dot l"></span>
+                  <div>
+                    <b>Webinar signups</b><small>Marked done by you</small>
+                  </div>
+                  <time>3h</time>
+                </li>
+                <li>
+                  <span class="dot v"></span>
+                  <div>
+                    <b>Email template</b><small>Marked done by Priya</small>
+                  </div>
+                  <time>1d</time>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-schedule" data-title="Schedule">
+          <div class="mh">
+            <div>
+              <h2>Schedule</h2>
+              <p>Your week at a glance, with meetings and deadlines.</p>
+            </div>
+          </div>
+          <div class="g g3">
+            <div class="kpi">
+              <span class="kl">Meetings this week</span
+              ><b class="kv"><i data-count="11">0</i></b
+              ><em class="dn">&#9660; 1.0% vs last month</em>
+              <div class="spark" data-line="14,13,12,12,11,11" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Focus hours</span
+              ><b class="kv"><i data-count="18">0</i>h</b
+              ><em class="up">&#9650; 4.0% vs last month</em>
+              <div class="spark" data-line="10,12,14,15,17,18" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Deadlines</span
+              ><b class="kv"><i data-count="4">0</i></b
+              ><em class="up">&#9650; 0.0% vs last month</em>
+              <div class="spark" data-line="4,4,5,4,4,4" data-spark></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Week view</h3></div>
+            <div class="wk">
+              <div class="wd">
+                <h4>Mon<small>26</small></h4>
+                <div class="ev v"><b>Standup</b><small>10:00</small></div>
+                <div class="ev c"><b>Planning</b><small>14:00</small></div>
+              </div>
+              <div class="wd">
+                <h4>Tue<small>27</small></h4>
+                <div class="ev c"><b>Design sync</b><small>11:00</small></div>
+              </div>
+              <div class="wd">
+                <h4>Wed<small>28</small></h4>
+                <div class="ev v"><b>Standup</b><small>10:00</small></div>
+                <div class="ev l"><b>Webinar prep</b><small>15:00</small></div>
+              </div>
+              <div class="wd tdy">
+                <h4>Thu<small>29</small></h4>
+                <div class="ev v"><b>Standup</b><small>10:00</small></div>
+                <div class="ev c"><b>Design review</b><small>13:30</small></div>
+                <div class="ev l"><b>1:1 Anika</b><small>16:00</small></div>
+              </div>
+              <div class="wd">
+                <h4>Fri<small>30</small></h4>
+                <div class="ev o"><b>All-hands</b><small>16:00</small></div>
+              </div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Agenda</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot v"></span>
+                  <div><b>Standup</b><small>Growth team, Meet</small></div>
+                  <time>10:00</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div><b>Design review</b><small>Room 2</small></div>
+                  <time>13:30</time>
+                </li>
+                <li>
+                  <span class="dot l"></span>
+                  <div><b>1:1 with Anika</b><small>Zoom</small></div>
+                  <time>16:00</time>
+                </li>
+              </ul>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Deadlines</h3></div>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Item</th>
+                    <th>Due</th>
+                    <th>Status</th>
+                  </tr>
+                  <tr>
+                    <td>Pricing copy</td>
+                    <td>Tue</td>
+                    <td><span class="bdg g">On track</span></td>
+                  </tr>
+                  <tr>
+                    <td>Q4 plan</td>
+                    <td>Thu</td>
+                    <td><span class="bdg o">At risk</span></td>
+                  </tr>
+                  <tr>
+                    <td>Case study</td>
+                    <td>Mon</td>
+                    <td><span class="bdg g">On track</span></td>
+                  </tr>
+                  <tr>
+                    <td>Brand kit</td>
+                    <td>Wed</td>
+                    <td><span class="bdg r">Not started</span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Time off</h3></div>
+              <div class="pr">
+                <div><span>Annual leave used</span><b>40%</b></div>
+                <div class="pt"><i class="v" style="--w: 40%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Sick leave used</span><b>10%</b></div>
+                <div class="pt"><i class="c" style="--w: 10%"></i></div>
+              </div>
+              <button class="b2" data-t="Leave request sent">
+                Request time off
+              </button>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Team availability</h3></div>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Teammate</th>
+                    <th>Today</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="av"
+                        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=120&h=120&q=70"
+                        alt=""
+                      />
+                      Anika Rao
+                    </td>
+                    <td><span class="bdg o">In meeting</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="av"
+                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=70"
+                        alt=""
+                      />
+                      Tom Becker
+                    </td>
+                    <td><span class="bdg g">Available</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="av"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=70"
+                        alt=""
+                      />
+                      Priya Nair
+                    </td>
+                    <td><span class="bdg g">Available</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="av"
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=70"
+                        alt=""
+                      />
+                      You
+                    </td>
+                    <td><span class="bdg c">Focus mode</span></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-time" data-title="Time tracking">
+          <div class="mh">
+            <div>
+              <h2>Time tracking</h2>
+              <p>Focus sessions, timesheets and weekly totals.</p>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Focus timer</h3></div>
+              <div class="timer">
+                <div class="ring" id="ring">
+                  <svg viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="52" />
+                    <circle id="rp" cx="60" cy="60" r="52" />
+                  </svg>
+                  <b id="tt">25:00</b>
+                </div>
+                <div class="mrow">
+                  <button class="b1" id="ts">Start</button
+                  ><button class="b2" id="tr">Reset</button>
+                </div>
+                <div class="seg" id="pm">
+                  <button class="on" data-min="25">Focus 25</button
+                  ><button data-min="5">Break 5</button
+                  ><button data-min="15">Long 15</button>
+                </div>
+                <small id="tn">Sessions completed today: 3</small>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>This week</h3></div>
+              <div
+                class="ch"
+                data-bars="5,7,6,8,6.5,0,0"
+                data-labels="Mon,Tue,Wed,Thu,Fri,Sat,Sun"
+                data-fmt="h"
+              ></div>
+              <div class="tot"><b>32.5h</b><span>of 40h target</span></div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Timesheet</h3></div>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>Project</th>
+                    <th>Task</th>
+                    <th>Hours</th>
+                  </tr>
+                  <tr>
+                    <td>Q4 campaign</td>
+                    <td>Plan</td>
+                    <td>3.5h</td>
+                  </tr>
+                  <tr>
+                    <td>Website refresh</td>
+                    <td>Copy review</td>
+                    <td>2.0h</td>
+                  </tr>
+                  <tr>
+                    <td>Brand kit</td>
+                    <td>Colors</td>
+                    <td>1.0h</td>
+                  </tr>
+                  <tr>
+                    <td>Partner program</td>
+                    <td>Outreach</td>
+                    <td>0.5h</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Where time goes</h3></div>
+              <div
+                class="dn-w"
+                data-donut="44,28,16,12"
+                data-names="Campaigns,Website,Brand,Partners"
+                data-center="32.5h"
+              ></div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="ph"><h3>Habits</h3></div>
+            <div class="pr">
+              <div><span>Focus sessions this week</span><b>75%</b></div>
+              <div class="pt"><i class="v" style="--w: 75%"></i></div>
+            </div>
+            <div class="pr">
+              <div><span>Breaks taken</span><b>60%</b></div>
+              <div class="pt"><i class="c" style="--w: 60%"></i></div>
+            </div>
+            <div class="pr">
+              <div><span>Timesheet on time</span><b>100%</b></div>
+              <div class="pt"><i class="l" style="--w: 100%"></i></div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-inbox" data-title="Inbox">
+          <div class="mh">
+            <div>
+              <h2>Inbox</h2>
+              <p>Messages, mentions and team conversations.</p>
+            </div>
+          </div>
+          <div class="g g3">
+            <div class="kpi">
+              <span class="kl">Unread</span
+              ><b class="kv"><i data-count="6">0</i></b
+              ><em class="dn">&#9660; 3.0% vs last month</em>
+              <div class="spark" data-line="12,10,9,8,7,6" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Mentions</span
+              ><b class="kv"><i data-count="3">0</i></b
+              ><em class="up">&#9650; 1.0% vs last month</em>
+              <div class="spark" data-line="1,2,2,3,2,3" data-spark></div>
+            </div>
+            <div class="kpi">
+              <span class="kl">Avg. reply time (min)</span
+              ><b class="kv"><i data-count="14">0</i></b
+              ><em class="dn">&#9660; 2.0% vs last month</em>
+              <div class="spark" data-line="22,20,18,16,15,14" data-spark></div>
+            </div>
+          </div>
+          <div class="g g2f">
+            <div class="panel">
+              <div class="ph"><h3>Conversation</h3></div>
+              <div class="chat" id="chat">
+                <div class="m in">
+                  <small>Priya</small>Can you share the new newsletter draft?
+                </div>
+                <div class="m out">Sure, sending it in five minutes.</div>
+                <div class="m in">
+                  <small>Tom</small>Landing page test goes live tomorrow.
+                </div>
+              </div>
+              <form class="cf" id="cform">
+                <input
+                  id="cin"
+                  placeholder="Write a message"
+                  autocomplete="off"
+                /><button class="b1">Send</button>
+              </form>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Channels</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot v"></span>
+                  <div><b># growth</b><small>12 members</small></div>
+                  <time>3</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div><b># design</b><small>9 members</small></div>
+                  <time>1</time>
+                </li>
+                <li>
+                  <span class="dot l"></span>
+                  <div><b># general</b><small>85 members</small></div>
+                  <time>2</time>
+                </li>
+                <li>
+                  <span class="dot o"></span>
+                  <div><b># wins</b><small>85 members</small></div>
+                  <time>0</time>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Mentions</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot v"></span>
+                  <div>
+                    <b>Priya mentioned you</b
+                    ><small>in #design: review copy?</small>
+                  </div>
+                  <time>5m</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div>
+                    <b>Anika mentioned you</b
+                    ><small>in #general: Q4 slides</small>
+                  </div>
+                  <time>1h</time>
+                </li>
+                <li>
+                  <span class="dot l"></span>
+                  <div>
+                    <b>Tom mentioned you</b
+                    ><small>in #growth: test results</small>
+                  </div>
+                  <time>2h</time>
+                </li>
+              </ul>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Shared files</h3></div>
+              <div class="tw">
+                <table>
+                  <tr>
+                    <th>File</th>
+                    <th>From</th>
+                    <th>Size</th>
+                  </tr>
+                  <tr>
+                    <td>Newsletter v3.pdf</td>
+                    <td>Priya</td>
+                    <td>1.2 MB</td>
+                  </tr>
+                  <tr>
+                    <td>Q4 plan.docx</td>
+                    <td>You</td>
+                    <td>340 KB</td>
+                  </tr>
+                  <tr>
+                    <td>Brand colors.fig</td>
+                    <td>Tom</td>
+                    <td>8 MB</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="mod" id="m-profile" data-title="Profile">
+          <div class="mh">
+            <div>
+              <h2>Profile</h2>
+              <p>Your growth, skills and preferences.</p>
+            </div>
+          </div>
+          <div class="g g2f">
+            <div class="panel">
+              <div class="ph"><h3>About you</h3></div>
+              <div class="prof">
+                <img
+                  class="av big"
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&h=120&q=70"
+                  alt="Sam"
+                />
+                <div>
+                  <h3>Sam Ortiz</h3>
+                  <p>Head of growth, Remote. Joined March 2022.</p>
+                  <div class="tags">
+                    <span>SEO</span><span>Email</span><span>Analytics</span
+                    ><span>Paid ads</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Skills</h3></div>
+              <div class="pr">
+                <div><span>Growth strategy</span><b>90%</b></div>
+                <div class="pt"><i class="v" style="--w: 90%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Data analysis</span><b>78%</b></div>
+                <div class="pt"><i class="c" style="--w: 78%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Copywriting</span><b>84%</b></div>
+                <div class="pt"><i class="l" style="--w: 84%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Public speaking</span><b>60%</b></div>
+                <div class="pt"><i class="o" style="--w: 60%"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="g g3">
+            <div class="panel">
+              <div class="ph"><h3>Goals</h3></div>
+              <div class="pr">
+                <div><span>Grow newsletter to 20k</span><b>72%</b></div>
+                <div class="pt"><i class="v" style="--w: 72%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Launch webinar series</span><b>40%</b></div>
+                <div class="pt"><i class="c" style="--w: 40%"></i></div>
+              </div>
+              <div class="pr">
+                <div><span>Publish 6 case studies</span><b>50%</b></div>
+                <div class="pt"><i class="l" style="--w: 50%"></i></div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Learning</h3></div>
+              <ul class="fl">
+                <li>
+                  <span class="dot v"></span>
+                  <div><b>Advanced SEO</b><small>4 of 8 lessons</small></div>
+                  <time>50%</time>
+                </li>
+                <li>
+                  <span class="dot c"></span>
+                  <div><b>Leading teams</b><small>Not started</small></div>
+                  <time>0%</time>
+                </li>
+                <li>
+                  <span class="dot l"></span>
+                  <div><b>SQL basics</b><small>Completed</small></div>
+                  <time>100%</time>
+                </li>
+              </ul>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Recognition</h3></div>
+              <div class="badges">
+                <span>&#127942;<small>Top performer</small></span
+                ><span>&#128161;<small>Idea machine</small></span
+                ><span>&#129309;<small>Team player</small></span>
+              </div>
+            </div>
+          </div>
+          <div class="g g2">
+            <div class="panel">
+              <div class="ph"><h3>Notifications</h3></div>
+              <div class="trow">
+                <div>
+                  <b>Email digest</b><small>Daily summary at 5pm</small>
+                </div>
+                <button class="tg on" aria-label="Email digest"></button>
+              </div>
+              <div class="trow">
+                <div><b>Mentions</b><small>Instant alerts</small></div>
+                <button class="tg on" aria-label="Mentions"></button>
+              </div>
+              <div class="trow">
+                <div>
+                  <b>Task reminders</b><small>One hour before due</small>
+                </div>
+                <button class="tg on" aria-label="Task reminders"></button>
+              </div>
+              <div class="trow">
+                <div><b>Weekly report</b><small>Every Monday</small></div>
+                <button class="tg" aria-label="Weekly report"></button>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="ph"><h3>Preferences</h3></div>
+              <div class="trow">
+                <div>
+                  <b>Dark sidebar</b><small>Keep navigation dark</small>
+                </div>
+                <button class="tg on" aria-label="Dark sidebar"></button>
+              </div>
+              <div class="trow">
+                <div><b>Compact tables</b><small>Show more rows</small></div>
+                <button class="tg" aria-label="Compact tables"></button>
+              </div>
+              <div class="trow">
+                <div>
+                  <b>Focus mode</b><small>Mute alerts while timing</small>
+                </div>
+                <button class="tg" aria-label="Focus mode"></button>
+              </div>
+              <button class="b2" data-t="Preferences saved">
+                Save preferences
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="modal" id="lom">
+      <div class="mbx">
+        <h3>Log out of Orbitly?</h3>
+        <p>You will return to the website. Unsaved changes may be lost.</p>
+        <div class="mrow">
+          <button class="b2" id="lc">Stay signed in</button>
+          <button class="b1" id="ly">Yes, log out</button>
+        </div>
+      </div>
+    </div>
+    <div class="toasts" id="toasts"></div>
+    <script src="js/dash.js"></script>
+    <script src="js/team.js"></script>
+  </body>
+</html>

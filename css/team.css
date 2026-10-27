@@ -1,0 +1,38 @@
+.role-team {
+  --sb: #4a2fd6;
+  --acc: #fff;
+  --accT: #4a2fd6;
+  --sbT: #e4defe;
+  --bg: #f6f8ff;
+}
+.role-team .side {
+  background: linear-gradient(170deg, #6d4aff, #2a1a8a);
+}
+.role-team .ni.on::after {
+  background: var(--lime);
+}
+.role-team .panel {
+  border-radius: 24px;
+  border: 2px solid var(--line);
+  box-shadow: 6px 6px 0 #e4defe;
+}
+.role-team .kpi {
+  border-radius: 24px;
+  border: 2px solid var(--line);
+}
+.role-team .mh h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.role-team .mh h2::before {
+  content: "";
+  width: 14px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--lime);
+  border: 2px solid var(--ink);
+}
+.role-team .top {
+  background: #f6f8ffe6;
+}
